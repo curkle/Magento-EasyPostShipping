@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Curkle_EasyPost>
+      <version>0.1.0</version>
+    </Curkle_EasyPost>
+  </modules>
+  <global>
+    <helpers>
+      <easypost>
+        <class>Curkle_EasyPost_Helper</class>
+      </easypost>
+    </helpers>
+	<models>
+	  <easypost>
+		<class>Curkle_EasyPost_Model</class>
+		<resourceModel>easypost_mysql4</resourceModel>
+	  </easypost>
+	</models>
+  </global>    
+	<default>
+        <carriers>
+            <easypost>
+                <active>1</active>
+                <model>easypost/carrier_easypost</model>
+                <name>EasyPost</name>
+                <title>EasyPost</title>
+                <description>EasyPost For Magento</description>
+                <sort_order>0</sort_order>
+            </easypost>
+        </carriers>
+    </default>
+</config> 
